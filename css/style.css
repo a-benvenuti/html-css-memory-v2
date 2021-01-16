@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nerko One', cursive;
+  background-image: url("../img/sfondo.jpg");
+}
+h1{
+  text-shadow: 2px 2px 4px #000000;
+}
+.gamebox{
+  margin: auto;
+  background-color: #ADD8E699;
+  width: 950px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*  header e footer */
+.central{
+  text-align: center;
+}
+.inizio{
+  color: white;
+  font-size: 50px;
+}
+.fine{
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: black;
+}
+/* fine header e footer */
+/* ----------------------------------GIOCO------------------------------- */
+.mazzo{
+  height: 810px;
+  width: 100%;
+}
+.cella{
+  width: 930px;
+  height: 260px;
+  margin:10px;
+  position: relative;
+}
+.carta{
+  display: inline-block;
+  border-radius: 10px;
+  height: 260px;
+  width: 225px;
+  background-image: url("../img/pattern.png");
+  background-size: contain;
+}
+.pos1{
+  position: absolute;
+  left: 0;
+}
+.pos2{
+  position: absolute;
+  left: 235px;
+}
+.pos3{
+  position: absolute;
+  right: 235px;
+}
+.pos4{
+  position: absolute;
+  right: 0;
+}
+/* ----------------------------------/GIOCO------------------------------- */
+/* ----------------------------------ANIMAZIONI------------------------------- */
+.superiore .pos1{
+  background-image: url("../img/nave.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.superiore .pos2:hover, .inferiore .pos1:hover{
+  background-image: url("../img/pallone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.superiore .pos3:hover, .centrale .pos4:hover{
+  background-image: url("../img/tram.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.superiore .pos4:hover, .centrale .pos1:hover{
+  background-image: url("../img/sottomarino.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.inferiore .pos2:hover, .centrale .pos3:hover{
+  background-image: url("../img/bici.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.inferiore .pos3:hover, .centrale .pos2:hover{
+  background-image: url("../img/trattore.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.superiore .pos1:hover{
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
+}
+.inferiore .pos4:hover{
+  background-image: url("../img/nave.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+/* ----------------------------------/ANIMAZIONI------------------------------- */
