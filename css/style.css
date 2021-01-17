@@ -5,16 +5,14 @@
 }
 body{
   font-family: 'Nerko One', cursive;
-  background-image: url("../img/sfondo.jpg");
+  background-color: #add8e6;
 }
 h1{
   text-shadow: 2px 2px 4px #000000;
 }
-.gamebox{
+.memory{
   margin: auto;
-  background-color: #ADD8E699;
-  width: 950px;
-  border-radius: 10px;
+  width: 590px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -27,91 +25,112 @@ h1{
   font-size: 50px;
 }
 .fine{
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 0;
   font-size: 20px;
   color: black;
 }
 /* fine header e footer */
 /* ----------------------------------GIOCO------------------------------- */
-.mazzo{
-  height: 810px;
+.gamebox{
   width: 100%;
-}
-.cella{
-  width: 930px;
-  height: 260px;
-  margin:10px;
+  height: 555px;
+  margin: auto;
   position: relative;
 }
-.carta{
+.slot{
   display: inline-block;
+  width: 130px;
+}
+.quattro{
+  position: absolute;
+  right: 20px;
+}
+.tre{
+  position: absolute;
+  right: 160px;
+}
+.due{
+  position: absolute;
+  left: 160px;
+}
+.uno{
+  position: absolute;
+  left: 20px;
+}
+.card{
+  width: 130px;
+  height: 170px;
   border-radius: 10px;
-  height: 260px;
-  width: 225px;
-  background-image: url("../img/pattern.png");
+  margin-bottom: 15px;
+  background-color: white;
   background-size: contain;
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
+  box-shadow: 2px 5px 8px black;
+  position: relative;
+  color: #ffffffff;
 }
-.pos1{
-  position: absolute;
-  left: 0;
+#special{
+  background-image: url("../img/nave.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
 }
-.pos2{
+.name{
+  display: inline-block;
   position: absolute;
-  left: 235px;
-}
-.pos3{
-  position: absolute;
-  right: 235px;
-}
-.pos4{
-  position: absolute;
-  right: 0;
+  bottom: 15px;
+  right: 15px;
 }
 /* ----------------------------------/GIOCO------------------------------- */
 /* ----------------------------------ANIMAZIONI------------------------------- */
-.superiore .pos1{
-  background-image: url("../img/nave.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+#special:hover{
   background-color: white;
-}
-.superiore .pos2:hover, .inferiore .pos1:hover{
-  background-image: url("../img/pallone.png");
+  color: #ffffffff;
   background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.superiore .pos3:hover, .centrale .pos4:hover{
-  background-image: url("../img/tram.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.superiore .pos4:hover, .centrale .pos1:hover{
-  background-image: url("../img/sottomarino.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.inferiore .pos2:hover, .centrale .pos3:hover{
-  background-image: url("../img/bici.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.inferiore .pos3:hover, .centrale .pos2:hover{
-  background-image: url("../img/trattore.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.superiore .pos1:hover{
   background-image: url("../img/pattern.png");
   background-repeat: repeat;
 }
-.inferiore .pos4:hover{
+.uno .sup:hover{
   background-image: url("../img/nave.png");
+  color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.uno .cen:hover, .quattro .cen:hover{
+  background-image: url("../img/pallone.png");
+  color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.uno .inf:hover, .tre .cen:hover{
+  background-image: url("../img/tram.png");
+  color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.due .sup:hover, .quattro .inf:hover{
+  background-image: url("../img/sottomarino.png");
+  color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.tre .sup:hover, .due .inf:hover{
+  background-image: url("../img/bici.png");
+  color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.quattro .sup:hover, .tre .inf:hover{
+  background-image: url("../img/trattore.png");
+  color: black;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: white;
