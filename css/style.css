@@ -5,18 +5,20 @@
 }
 body{
   font-family: 'Nerko One', cursive;
-  background-color: #add8e6;
+  background-image: url("../img/sfondo.jpg");
 }
 h1{
   text-shadow: 2px 2px 4px #000000;
 }
-.memory{
+.gamebox{
   margin: auto;
-  width: 590px;
+  background-color: #ADD8E699;
+  width: 600px;
+  border-radius: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  box-shadow: 2px 5px 8px black;
 }
-/*  header e footer */
+/*---------------- header e footer--------------- */
 .central{
   text-align: center;
 }
@@ -25,114 +27,96 @@ h1{
   font-size: 50px;
 }
 .fine{
-  /* margin-top: 10px; */
+  margin-top: 10px;
   margin-bottom: 0;
   font-size: 20px;
   color: black;
 }
-/* fine header e footer */
-/* ----------------------------------GIOCO------------------------------- */
-.gamebox{
-  width: 100%;
-  height: 555px;
-  margin: auto;
-  position: relative;
+/*-------------/header e footer------------------ */
+/* ----------------------GIOCO----------------- */
+.cella{
+  width: 560px;
+  margin: auto
 }
-.slot{
+.carta{
   display: inline-block;
-  width: 130px;
-}
-.quattro{
-  position: absolute;
-  right: 20px;
-}
-.tre{
-  position: absolute;
-  right: 160px;
-}
-.due{
-  position: absolute;
-  left: 160px;
-}
-.uno{
-  position: absolute;
-  left: 20px;
-}
-.card{
-  width: 130px;
-  height: 170px;
   border-radius: 10px;
-  margin-bottom: 15px;
-  background-color: white;
-  background-size: contain;
+  height: 150px;
+  width: 120px;
   background-image: url("../img/pattern.png");
-  background-repeat: repeat;
-  box-shadow: 2px 5px 8px black;
-  position: relative;
+  background-size: contain;
+  margin: 10px;
   color: #ffffffff;
 }
-#special{
-  background-image: url("../img/nave.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
+.pos1, .pos2, .pos3, .pos4{
+  box-shadow: 2px 5px 8px black;
+  position: relative;
 }
+/* ----------------------/GIOCO----------------- */
+/* ---------POSIZIONAMENTO CARD NAME-------------------- */
 .name{
   display: inline-block;
   position: absolute;
-  bottom: 15px;
+  bottom: 5px;
   right: 15px;
 }
-/* ----------------------------------/GIOCO------------------------------- */
+/* ---------/POSIZIONAMENTO CARD NAME-------------------- */
+.carta:hover{
+ color: #ffffffff; /* attualmente non ho trovato altra soluzione */
+}
 /* ----------------------------------ANIMAZIONI------------------------------- */
-#special:hover{
-  background-color: white;
-  color: #ffffffff;
+.superiore .pos1{                    /*special*/
+  background-image: url("../img/nave.png");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+.superiore .pos2:hover, .inferiore .pos1:hover{
+  background-image: url("../img/pallone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+.superiore .pos3:hover, .centrale .pos4:hover{
+  background-image: url("../img/tram.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+.superiore .pos4:hover, .centrale .pos1:hover{
+  background-image: url("../img/sottomarino.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+.inferiore .pos2:hover, .centrale .pos3:hover{
+  background-image: url("../img/bici.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+.inferiore .pos3:hover, .centrale .pos2:hover{
+  background-image: url("../img/trattore.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+}
+.superiore .pos1:hover{                /*special*/
   background-image: url("../img/pattern.png");
   background-repeat: repeat;
+  color: #ffffffff;
 }
-.uno .sup:hover{
+.inferiore .pos4:hover{
   background-image: url("../img/nave.png");
-  color: black;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: white;
-}
-.uno .cen:hover, .quattro .cen:hover{
-  background-image: url("../img/pallone.png");
   color: black;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.uno .inf:hover, .tre .cen:hover{
-  background-image: url("../img/tram.png");
-  color: black;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.due .sup:hover, .quattro .inf:hover{
-  background-image: url("../img/sottomarino.png");
-  color: black;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.tre .sup:hover, .due .inf:hover{
-  background-image: url("../img/bici.png");
-  color: black;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-.quattro .sup:hover, .tre .inf:hover{
-  background-image: url("../img/trattore.png");
-  color: black;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
 }
 /* ----------------------------------/ANIMAZIONI------------------------------- */
