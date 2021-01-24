@@ -28,7 +28,6 @@ h1{
 }
 .fine{
   margin-top: 10px;
-  margin-bottom: 0;
   font-size: 20px;
   color: black;
 }
@@ -45,6 +44,7 @@ h1{
   width: 120px;
   background-image: url("../img/pattern.png");
   background-size: contain;
+  background-repeat: repeat;
   margin: 10px;
   color: #ffffffff;
 }
@@ -61,62 +61,41 @@ h1{
   right: 15px;
 }
 /* ---------/POSIZIONAMENTO CARD NAME-------------------- */
-.carta:hover{
- color: #ffffffff; /* attualmente non ho trovato altra soluzione */
-}
 /* ----------------------------------ANIMAZIONI------------------------------- */
-.superiore .pos1{                    /*special*/
+.def{
+  background-size: contain;
+  background-color: white;
+}
+.def:hover{
+  background-repeat: no-repeat;
+  color: black;
+}
+.superiore .pos1{
   background-image: url("../img/nave.png");
-  background-size: contain;
   background-repeat: no-repeat;
-  background-color: white;
   color: black;
 }
-.superiore .pos2:hover, .inferiore .pos1:hover{
-  background-image: url("../img/pallone.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
-}
-.superiore .pos3:hover, .centrale .pos4:hover{
-  background-image: url("../img/tram.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
-}
-.superiore .pos4:hover, .centrale .pos1:hover{
-  background-image: url("../img/sottomarino.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
-}
-.inferiore .pos2:hover, .centrale .pos3:hover{
-  background-image: url("../img/bici.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
-}
-.inferiore .pos3:hover, .centrale .pos2:hover{
-  background-image: url("../img/trattore.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
-}
-.superiore .pos1:hover{                /*special*/
+.superiore .pos1:hover{
   background-image: url("../img/pattern.png");
   background-repeat: repeat;
   color: #ffffffff;
 }
+.superiore .pos2:hover, .inferiore .pos1:hover{
+  background-image: url("../img/pallone.png");
+}
+.superiore .pos3:hover, .centrale .pos4:hover{
+  background-image: url("../img/tram.png");
+}
+.superiore .pos4:hover, .centrale .pos1:hover{
+  background-image: url("../img/sottomarino.png");
+}
+.inferiore .pos2:hover, .centrale .pos3:hover{
+  background-image: url("../img/bici.png");
+}
+.inferiore .pos3:hover, .centrale .pos2:hover{
+  background-image: url("../img/trattore.png");
+}
 .inferiore .pos4:hover{
   background-image: url("../img/nave.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
 }
 /* ----------------------------------/ANIMAZIONI------------------------------- */
