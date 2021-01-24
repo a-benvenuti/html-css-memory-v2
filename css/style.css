@@ -7,9 +7,6 @@ body{
   font-family: 'Nerko One', cursive;
   background-image: url("../img/sfondo.jpg");
 }
-h1{
-  text-shadow: 2px 2px 4px #000000;
-}
 .gamebox{
   margin: auto;
   background-color: #ADD8E699;
@@ -23,6 +20,7 @@ h1{
   text-align: center;
 }
 .inizio{
+  text-shadow: 2px 2px 4px #000000;
   color: white;
   font-size: 50px;
 }
